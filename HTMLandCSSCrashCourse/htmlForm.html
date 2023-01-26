@@ -5,7 +5,7 @@
     </head>
     <body>
         <h1>HTML Forms</h1>
-        <!--creat an form with some input fields:-->
+        <!--creat an form with different input fields:-->
         <form>
             <!-- the label and input are linked using for and id attributes which have the same value-->
             <label for="username">enter username:</label>
@@ -17,6 +17,7 @@
             <label for="password">enter password</label>
             <input type="password" name="" id="password" name = "password">
 
+            <!-- create radio buttons-->
             <p>Select your age:</p>
 
             <input type="radio" name = "age" value = "0-25" id = "option-1">
@@ -27,16 +28,34 @@
             <br><br>
             <input type="radio" name = "age" value = "51+" id = "option-3">
             <label for="option-3">51+</label>
+            <br><br>
+            <!--For the entities which share the same name, only one entity can be marked as checked.-->
 
+            <!--create a select box-->
+            <label for="question">Security question:</label>
+            <select name="question" id="question">
+                <option value="q1">What color are your favorite pair of socks?</option>
+                <option value="q2">What is your pet name?</option>
+                <option value="q3">What is your best friend's name?</option>
+            </select>
+            <br><br>
+            <label for="answer">Security question answer</label>
+            <input type="text" id ="answer">
+            <br><br>
+
+            <label for="bio">Your bio</label><br>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="enter your bio..."></textarea>
         </form>
     </body>
 </html>
 
 <!--HTML Essentials-->
 <!--
-    -<input> -> without closing tag
+    - <input> -> without closing tag
         - type attribute -> type of input
         - id attribute -> give an id which should be unique(identifies each specific tag)
-    <label> -> used to provide usability improvement for mouse users. (when click on the label text, is selected the field where user can type)
-
--->
+    - <label> -> used to provide usability improvement for mouse users. (when click on the label text, is selected the field where user can type)
+    - <text area> -> create a box with restricted dimensions
+        - placeholder attribute -> help user to see what should enter in the text area.(set like a default content in the text area.)
+        
+    -->
