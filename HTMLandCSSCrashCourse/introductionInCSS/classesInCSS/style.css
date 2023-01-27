@@ -1,0 +1,57 @@
+/* 1 */
+.error{
+    color: red;
+}
+/* 2 */
+p.succes{
+    color: green;
+}
+/* 3 */
+#content{
+    background-color: azure;
+    padding: 20px;
+}
+/* 4 */
+div ul{
+    color: rgb(173, 113, 173);
+}
+/* 5 */
+a[href]{
+    color: rgb(121, 85, 13);
+}
+/* 6 */
+a[href ="https://github.com/butnaruv/CSS_Courses/tree/main/HTMLandCSSCrashCourse"]{
+    color: rgb(13, 15, 121);
+    font-weight: bold;
+}
+/* 7 */
+a[href *="instagram"]{
+    color: rgb(121, 13, 94);
+    font-weight: bold;
+}
+
+/* CSS classes */
+/*
+    1.
+        - .name -> every tag which has class attribute == to "name" will inherit the style of ".name" class from css file
+    2.
+        - p.name -> only p tags wich have class attibute == "name" will inherit the style of "p.name" class from css file
+    3.
+        - #idName -> only the tag which has the idName inherit the style from #idName class from css file
+    4.    
+        - parentName childName{css style} -> only the tags of childName type from parentName tags inherit this style
+            div.error -> all the div tags which have class == error will inherit the style
+            div .error -> all the tags from the div tag with class == error  will inherit the style
+    5.
+        - all a tags with href param will inherit the style
+    6. 
+        - all a tags with href == "link" will inherit the style
+    7.
+        - all a tags with href including "value" will inherit the style
+    Conclusion:
+        - [=] -> if its equl, it inherit the style
+        - [*=] -> if it includes, it inherit the style
+        - [$=] -> if it ends in it, it inherit the style
+
+
+*/
