@@ -1,0 +1,159 @@
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+header{
+    background-color: #F63232;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+}
+
+header h1{
+    color: white;
+    border: 5px solid white;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 60px;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner .welcome{
+    background-color: #FEB614;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+
+.banner h2{
+    font-size: 60px ;
+}
+
+.banner h2 span{
+    font-size: 1.3em;
+}
+
+.banner img{
+    max-width: 100%;
+}
+
+nav{
+    background-color: #F4F4F4;
+    padding: 20px;
+    position: sticky; 
+    top: 95px; /*makes the nav bar to be fixed starting with 140px from the top*/
+}
+
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px; /*set an max width of 1200px */
+    margin: 0 auto; /* top/bottom - 0, left/right -automaticly align to center if there is any extra white space */
+}
+
+nav li{
+    width: 28%;
+    display: inline-block;
+    font-size: 24px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #4B4B4B;
+}
+
+nav li a.join{
+    color: #F63232;
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px, auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+article{
+    color: #F63232;
+    font-size: 30px;
+}
+
+article p{
+    line-height: 2em;
+    color:#4B4B4B;
+}
+
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+
+}
+
+.images li img{
+    max-width: 100%;
+}
+
+.join{
+    background-color: #F4F4F4;
+    text-align: center;
+    /* padding: 60px 20px; */
+    color:#4B4B4B;
+}
+
+.join h2{
+    font-size: 36px;
+}
+
+form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 20px;
+    border: 4px solid white;
+}
+
+footer{
+    background-color: #F63232;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+/* CSS postion attribute */
+/* 
+    - static -> the default position
+    - relative -> can be moved in relation to default position
+    - absolute -> it's in relation with the position of the parent. 
+        - if we'll use px, always will be the same distance. (regardless of whether the page dimensions change)
+        - in order to keep the same result, % are used.
+    - fixed -> usually used for headers, menu bars. the positio rest fixed even if you scroll.
+
+ */
+ /* CSS tips */
+ /* 
+    - font-size: 1.3 em -> inherits the value from the parent and * with 1.3
+    - z-index : bring elements in front(if value is +) or backward (if value is -)
+    - white-space: nowrap -> when we have inline elements, they can go on the next line.
+        but nowrap value to white-space attribute included for parent solve this issue.
+    - margin: 0 auto -> top and bottom 0, but on the left/right in will be centralised in the middle automaticly
+    */
